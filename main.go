@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golang_server_practice/server/http_server"
+)
 
 func main() {
-	fmt.Println("hello world!")
+	http_server.StartHttpServer()
+
+	fmt.Println("Server running...")
 }
