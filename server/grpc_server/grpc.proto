@@ -1,0 +1,12 @@
+syntax = "proto3";
+option go_package = "golang-server-practice/server/grpc_server";
+
+service User {
+    rpc GetUser(EmptyMessage) returns (GetUserResponse) {} 
+}
+
+message EmptyMessage {}
+
+message GetUserResponse {
+    string name = 1;
+}
